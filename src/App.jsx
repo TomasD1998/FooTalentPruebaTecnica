@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PokemonList from './components/PokemonList';
 import PokemonDetails from './components/PokemonDetails';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import './styles/global.scss';
 
 const App  = () => {
@@ -15,6 +16,7 @@ const App  = () => {
           <Route path = "/pokemon/:id" element = {<PokemonDetails />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 };
