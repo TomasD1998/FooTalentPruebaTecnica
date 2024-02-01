@@ -4,7 +4,7 @@ import PokemonList from './components/PokemonList';
 import PokemonDetails from './components/PokemonDetails';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './styles/global.scss';
+import './styles/global.css';
 
 const App  = () => {
   return (
