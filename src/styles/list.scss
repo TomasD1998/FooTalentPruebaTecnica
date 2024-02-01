@@ -1,0 +1,88 @@
+/* Estilos base para dispositivos móviles */
+.pokemon-list {
+    background-color: #242424;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.sort-controls {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sort-controls label {
+    margin-right: 10px;
+}
+
+.pokemon-card {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-image {
+    width: 100%;
+    max-width: 425px;
+    height: auto;  
+}
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-name {
+    font-size: 2rem; /* Reducimos el tamaño del nombre para dispositivos móviles */
+    font-weight: bold;
+    margin-bottom: 3px; /* Reducimos el espacio entre el nombre y los detalles para dispositivos móviles */
+}
+
+.pokemon-details {
+    font-size: 1.5rem; /* Reducimos el tamaño de los detalles para dispositivos móviles */
+    margin-bottom: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .pokemon-list {
+        margin: 20px;
+    }
+
+    .pokemon-name {
+        font-size: 3rem; 
+        font-weight: bold;
+        margin-bottom: 5px; 
+    }
+    
+    .pokemon-details {
+        font-size: 2rem; 
+        margin-bottom: 5px;
+    }
+
+    .sort-controls {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sort-controls label {
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+
+    .sort-controls select {
+        font-size: 1.1rem;
+    }
+
+    .pokemon-image {
+        width: 100%;
+        max-width: 650px;
+        height: auto;  
+    }
+}
